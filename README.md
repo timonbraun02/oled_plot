@@ -1,4 +1,4 @@
-# oled_plot
+# Graph_v2
 An Arduino compatible library for plotting data to an OLED-Display.
 
 You also need the following libs:
