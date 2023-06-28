@@ -105,24 +105,6 @@ public:
     return Y_min;
   }
 
-  // void drawDataPoints()
-  // {
-  //   drawAxis(X_startVal, X_endVal, Y_startVal, Y_endVal);
-  //   for (byte i = 0; i < points; i++)
-  //   {
-
-  //     int X_coord = ((((i + 1) * 100 / points) * (X_endVal - X_startVal)) / 100) + X_startVal;
-  //     int point = data[i];
-  //     int Y_coord = 0;
-  //     if (point > 0)
-  //     {
-  //       Y_coord = ((point * 100 / Y_max) * Y_endVal) / 100;
-  //     }
-  //     Y_coord = map(Y_coord, Y_startVal, Y_endVal, Y_endVal, Y_startVal);
-  //     display.drawPixel(X_coord, Y_coord, WHITE);
-  //   }
-  // }
-
   void drawDataLine()
   {
     for (byte j = 0; j < num_signals; j++)
