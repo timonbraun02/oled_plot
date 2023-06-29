@@ -189,6 +189,9 @@ public:
   }
 
 void set_Y_Zoom(int maxVal){
+  if (maxVal <= 0){
+    maxVal == 1; // prevent divison by zero error
+  }
   manual_Y_max = maxVal;
 }
 
