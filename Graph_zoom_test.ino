@@ -13,7 +13,7 @@
 #define poti 4 // poti at analog pin 4 (ESP32)
 int Y_max = 1;
 
-graph Graph1(2, 100); // create graph (num signals -> max. 6, num data points in graph -> max. 255)
+graph Graph1(2, 255); // create graph (num signals -> max. 6, num data points in graph -> max. 255)
 
 void setup() {
 
@@ -30,8 +30,8 @@ void loop() {
   int graph1_signal[2];
 
   //two diffent signals for Graph1
-  graph1_signal[0] = 12 + 10 * sin(2 * PI * t * 0.05);
-  graph1_signal[1] = 12 + 5 * sin(2 * PI * t * 0.1);
+  graph1_signal[0] = 12 + 10 * sin(2 * PI * t * 0.1) + 2 *  sin(2 * PI * t * 150);
+  graph1_signal[1] = 12 + 5 * sin(2 * PI * t * 0.5);
 
   Y_max = analogRead(poti); // read poti
   Y_max = map(Y_max, 0, 4095, 1, 50); // map analog value to your needs
@@ -53,5 +53,5 @@ void loop() {
   display.print(Graph1.manual_Y_max);
 
   display.display(); // display everything
-  delay(200);
+  delay(10);
 }
