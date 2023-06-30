@@ -2,6 +2,11 @@
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
+/*
+  Graph_v3.h - Library for plotting data to an OLED.
+  Created by Timon Braun, June 28, 2023.
+  Released into the public domain.
+*/
 
   /**
    * Note:
