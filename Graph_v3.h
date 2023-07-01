@@ -33,8 +33,8 @@ void init_graph()
     for (;;)
       ; // Don't proceed, loop forever
   }
-  display.display();
   display.clearDisplay();
+  display.display();
   display.setTextSize(1);      // set text size
   display.setTextColor(WHITE); // set text color
 }
