@@ -9,7 +9,7 @@ void setup() {
 
   init_graph();
   myGraph.drawAxis(2, 128, 20, 62); // init graph with dimensions (x1, x2, y1, y2)
-  myGraph.autoZoom = false; // disble auto zoom
+  myGraph.autoZoom = false; // disable auto zoom
   myGraph.set_Y_Zoom(Y_axis_max); // set manual zoom for y-axis
 
 }
