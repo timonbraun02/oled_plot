@@ -1,4 +1,4 @@
-#include "Graph_v3.h"
+#include "Graph_v4.h"
 // library imports all of the oled libs
 // if you use a 32x128 pixel oled, you need to change the #define SCREEN_HEIGHT to 32 in "Graph_v2.h", otherwise it will try to plot outside the visable screen
 
@@ -44,7 +44,7 @@ void loop() {
 
   // display avr, max, min and current zoom
   display.setCursor(0, 0);
-  display.print(Graph1.getAverage(0));
+  display.print(Graph1.getAverage());
   display.setCursor(0, 10);
   display.print(Graph1.getMax());
   display.setCursor(0, 20);
